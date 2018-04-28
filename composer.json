@@ -11,6 +11,6 @@
     ],
     "require": {
         "bpa/notifications": "dev-master",
-        "bpa/notifications-stride": "dev-master",
+        "bpa/notifications-stride": "dev-master"
     }
 }
