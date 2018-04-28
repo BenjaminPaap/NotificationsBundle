@@ -1,5 +1,5 @@
 {
-    "name": "benjamin/notifications-bundle",
+    "name": "bpa/notifications-bundle",
     "description": "Symfony Bundle to send notifications to different providers",
     "type": "library",
     "license": "MIT",
