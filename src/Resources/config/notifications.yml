@@ -1,0 +1,3 @@
+services:
+    bpa_notifications_service:
+        class: Bpa\Notifications\NotificationService

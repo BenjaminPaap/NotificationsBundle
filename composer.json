@@ -1,0 +1,16 @@
+{
+    "name": "benjamin/notifications-bundle",
+    "description": "Symfony Bundle to send notifications to different providers",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Benjamin Paap",
+            "email": "benjamin.paap@gmail.com"
+        }
+    ],
+    "require": {
+        "bpa/notifications": "dev-master",
+        "bpa/notifications-stride": "dev-master",
+    }
+}
