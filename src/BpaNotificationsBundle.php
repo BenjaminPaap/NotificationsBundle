@@ -2,6 +2,7 @@
 
 namespace Bpa\Notifications;
 
+use Bpa\Notifications\DependencyInjection\HandlerCompilerPass;
 use Bpa\Notifications\DependencyInjection\MappingCompilerPass;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
@@ -16,6 +17,6 @@ class BpaNotificationsBundle extends Bundle
      */
     public function build(ContainerBuilder $container)
     {
-        $container->addCompilerPass(new MappingCompilerPass());
+        $container->addCompilerPass(new HandlerCompilerPass());
     }
 }

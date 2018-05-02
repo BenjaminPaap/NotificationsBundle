@@ -12,5 +12,10 @@
     "require": {
         "bpa/notifications": "dev-master",
         "bpa/notifications-stride": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bpa\\Notifications\\": "src/"
+        }
     }
 }

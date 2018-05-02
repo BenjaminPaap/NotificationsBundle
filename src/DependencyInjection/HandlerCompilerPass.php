@@ -7,20 +7,20 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Reference;
 
 /**
- * Adds mappings to the notification service
+ * Adds handlers to the notification service
  */
-class MappingCompilerPass implements CompilerPassInterface
+class HandlerCompilerPass implements CompilerPassInterface
 {
     /**
      * @param ContainerBuilder $container
      */
     public function process(ContainerBuilder $container)
     {
-        $services = $container->findTaggedServiceIds('bpa_notification_mapping');
+        $services = $container->findTaggedServiceIds('bpa_notification_handler');
         $definition = $container->findDefinition('bpa_notifications_service');
 
-        foreach ($services as $service) {
-            $definition->addMethodCall('addMapping', new Reference($service['id']));
+        foreach (array_keys($services) as $id) {
+            $definition->addMethodCall('addHandler', [new Reference($id)]);
         }
     }
 }
