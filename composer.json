@@ -10,8 +10,8 @@
         }
     ],
     "require": {
-        "bpa/notifications": "dev-master",
-        "bpa/notifications-stride": "dev-master"
+        "bpa/notifications": "^1.0",
+        "bpa/notifications-stride": "^1.0"
     },
     "autoload": {
         "psr-4": {
