@@ -10,8 +10,11 @@
         }
     ],
     "require": {
-        "bpa/notifications": "^1.0",
-        "bpa/notifications-stride": "^1.0"
+        "bpa/notifications": "^1.0"
+    },
+    "suggest": {
+        "bpa/notifications-stride": "Stride notification handler",
+        "bpa/notifications-slack": "Slack notification handler"
     },
     "autoload": {
         "psr-4": {
