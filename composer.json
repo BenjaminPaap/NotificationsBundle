@@ -14,7 +14,8 @@
     },
     "suggest": {
         "bpa/notifications-stride": "Stride notification handler",
-        "bpa/notifications-slack": "Slack notification handler"
+        "bpa/notifications-slack": "Slack notification handler",
+        "bpa/notifications-mattermost": "Mattermost notification handler"
     },
     "autoload": {
         "psr-4": {
